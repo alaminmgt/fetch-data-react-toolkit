@@ -11,3 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.post_view {
+  width: 75%;
+  margin: 0 auto;
+}
+section{
+  display: grid;
+  grid-gap: .5rem;
+  padding: 1rem;
+}
+article{
+  background-color: midnightblue;
+  color: white;
+  padding: 2rem;
+}
+@media (min-width: 600px) {
+  section {
+    grid-template-columns: auto auto;
+  }
+}
+@media (min-width: 768px) {
+  section {
+    grid-template-columns: auto auto auto;
+  }
+}
